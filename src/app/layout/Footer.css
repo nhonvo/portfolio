@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    margin-bottom: 20px;
+}
+
+.footer__social a {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer__social a:hover {
+    color: #1877f2;
+    /* Facebook blue color */
+}
+
+.footer__copy {
+    font-size: 14px;
+    color: #888;
+}
