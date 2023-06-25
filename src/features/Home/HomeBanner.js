@@ -19,9 +19,9 @@ function HomeBanner() {
                 </a>
 
                 <div className="home__social">
-                    <a href="linkedin.com/in/truongnhon" className="home__social-icon"><LinkedinOutlined /></a>
-                    <a href="facebook.com/nhonvtt" className="home__social-icon"><FacebookOutlined /></a>
-                    <a href="github.com/nhonvo" className="home__social-icon"><GithubOutlined /></a>
+                    <a href="https://linkedin.com/in/truongnhon" className="home__social-icon"><LinkedinOutlined /></a>
+                    <a href="https://facebook.com/nhonvtt" className="home__social-icon"><FacebookOutlined /></a>
+                    <a href="https://github.com/nhonvo" className="home__social-icon"><GithubOutlined /></a>
                 </div>
                 <a href="#about" className="home__scroll">
                     <DownOutlined className="home__scroll-icon" />
