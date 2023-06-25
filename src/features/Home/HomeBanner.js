@@ -1,7 +1,7 @@
 import React from "react";
 import avatar from "../../Assets/img/avatar-nonBackground.png"
 import cv from "../../Assets/pdf/cv.pdf"
-import { DownOutlined } from '@ant-design/icons';
+import { DownOutlined, LinkedinOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
 
 function HomeBanner() {
     return (
@@ -19,11 +19,10 @@ function HomeBanner() {
                 </a>
 
                 <div className="home__social">
-                    <a href="linkedin.com/in/truongnhon" className="home__social-icon"><i className="bx bxl-linkedin"></i></a>
-                    <a href="facebook.com/nhonvtt" className="home__social-icon"><i className="bx bxl-facebook"></i></a>
-                    <a href="github.com/nhonvo" className="home__social-icon"><i className="bx bxl-github"></i></a>
+                    <a href="linkedin.com/in/truongnhon" className="home__social-icon"><LinkedinOutlined /></a>
+                    <a href="facebook.com/nhonvtt" className="home__social-icon"><FacebookOutlined /></a>
+                    <a href="github.com/nhonvo" className="home__social-icon"><GithubOutlined /></a>
                 </div>
-
                 <a href="#about" className="home__scroll">
                     <DownOutlined className="home__scroll-icon" />
                     <span className="home__scroll-name">Scroll Down</span>
