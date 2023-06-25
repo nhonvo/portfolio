@@ -5,7 +5,9 @@ import myfirstweb from '../.././Assets/img/Competition/my-first-website.jpg'
 import aiChallenge from '../.././Assets/img/Competition/AI-Challenge.png'
 import scholarship2020 from '../.././Assets/img/Competition/scholarship2020-2021.jpg'
 import schoolarship2021 from '../.././Assets/img/Competition/schoolarship2021-2022.jpg'
-
+import sv5t2021 from '../.././Assets/img/Competition/sv5t2021.jpg'
+import sv5t2020 from '../.././Assets/img/Competition/sv5t2020.jpg'
+import './Achievement.css'
 function Achievement() {
     return (
         <section className="work section" id="achievement">
@@ -30,7 +32,7 @@ function Achievement() {
                     </p>
                 </a>
                 <a href="" target="_blank" className="work__img" title="Image update later">
-                    <img src="" alt="" />
+                    <img src={sv5t2021} alt="" />
                     <h2 className="about__subtitle" style={{ color: 'rgb(49, 112, 238)', padding: '1rem' }}>
                         Student of 5 merits level school in 2022
                     </h2>
@@ -75,9 +77,9 @@ function Achievement() {
                     </p>
                 </a>
                 <a href="" target="_blank" className="work__img" title="Image update later">
-                    <img src="" alt="" />
+                    <img src={sv5t2020} alt="" />
                     <h2 className="about__subtitle" style={{ color: 'rgb(49, 112, 238)', padding: '1rem' }}>
-                        Student of 5 merits level school in 2020
+                        Student of 5 merits level school in 2021
                     </h2>
                     <p className="about__text" style={{ color: 'black', padding: '0 0 0.5rem 0.5rem' }}>
                         Ho Chi Minh city University of Technology

@@ -26,10 +26,11 @@ function App() {
     <Router>
       <Preloader load={load} />
       <NavBar />
-      <Routes>
+      <Home />
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/todo" element={<TodoApp />} />
-      </Routes>
+      </Routes> */}
       <Footer />
     </Router>
   );

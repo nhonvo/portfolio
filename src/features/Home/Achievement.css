@@ -1,0 +1,22 @@
+.work__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work__img {
+    width: 30%;
+    /* Adjust the percentage as per your desired size */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.work__img img {
+    width: 100%;
+}
+
+.work__img h2,
+.work__img p {
+    padding: 0.5rem;
+}
