@@ -6,11 +6,13 @@ function Achievement() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await agent.get('/achievement');
-            setData(response.data);
-        };
-        fetchData();
+        // const fetchData = async () => {
+        //     const response = await agent.get('/achievement');
+        //     setData(response.data);
+        // };
+        // fetchData();
+        setData([])
+
     }, []);
     return (
         <section className="work section" id="achievement">
@@ -18,7 +20,7 @@ function Achievement() {
             <div className="work__container bd-grid">
                 {data?.map((item, index) => (
                     <a key={index} href="" target="_blank" className="work__img" title="Image update later">
-                        <img src={item?.imageURL} alt="" />
+                        <img src={item?.images[0]?.path} alt="" />
                         <h2 className="about__subtitle" style={{ color: 'rgb(49, 112, 238)', padding: '1rem' }}>
                             {item?.name}
                         </h2>

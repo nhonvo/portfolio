@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import agent from "../../app/api/agent";
-import avatar from '../.././Assets/img/avatar.jpg'
 
 function About() {
     const [data, setData] = useState(null);
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await agent.get('/me');
-            setData(response.data);
-        };
-        fetchData();
+        // const fetchData = async () => {
+        //     const response = await agent.get('/me');
+        //     setData(response.data);
+        // };
+        // fetchData();
+        setData([])
+
     }, []);
     return (
         <section className="about section" id="about">

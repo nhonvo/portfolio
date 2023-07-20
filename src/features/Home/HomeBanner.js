@@ -1,5 +1,3 @@
-// import React from "react";
-import avatar from "../../Assets/img/avatar-nonBackground.png"
 import cv from "../../Assets/pdf/cv.pdf"
 import { DownOutlined, LinkedinOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
 import React, { useState, useEffect } from 'react';
@@ -9,11 +7,12 @@ function HomeBanner() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await agent.get('/me');
-            setData(response.data);
-        };
-        fetchData();
+        // const fetchData = async () => {
+        //     const response = await agent.get('/me');
+        //     setData(response.data);
+        // };
+        // fetchData();
+        setData(null)
     }, []);
     return (
         <section className="home bd-grid" id="home">
@@ -46,7 +45,7 @@ function HomeBanner() {
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                            <image className="home__blob-img" xlinkHref={avatar} alt="Avatar" x="18%" y="-20%" width="150%" height="150%" />
+                            <image className="home__blob-img" xlinkHref={data?.images[0]?.path} alt="Avatar" x="18%" y="-20%" width="150%" height="150%" />
                         </g>
                     </svg>
                 </div>

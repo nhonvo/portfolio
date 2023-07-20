@@ -5,11 +5,13 @@ function Contact() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const response = await agent.get('/me');
-            setData(response.data);
-        };
-        fetchData();
+        // const fetchData = async () => {
+        //     const response = await agent.get('/me');
+        //     setData(response.data);
+        // };
+        // fetchData();
+        setData([])
+
     }, []);
     return (
         <section className="contact section" id="contact">

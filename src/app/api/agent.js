@@ -1,10 +1,19 @@
 import axios from 'axios';
 
-const baseURL = 'https://portfolio-truongnhon.azurewebsites.net/'; // Replace with your actual base URL
+axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
-const agent = axios.create({
-  baseURL,
-  timeout: 5000, // Add any default configurations you need
-});
+const responseBody = (response) => {
+  return response.data
+};
 
+
+const projects = {
+  list: () =>
+    axios.get('project').then(responseBody),
+}
+
+const agent = {
+  projects,
+}
 export default agent;
+
