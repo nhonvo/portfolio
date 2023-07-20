@@ -1,15 +1,26 @@
-import React from "react";
+// import React from "react";
 import avatar from "../../Assets/img/avatar-nonBackground.png"
 import cv from "../../Assets/pdf/cv.pdf"
 import { DownOutlined, LinkedinOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
+import React, { useState, useEffect } from 'react';
+import agent from "../../app/api/agent";
 
 function HomeBanner() {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await agent.get('/me');
+            setData(response.data);
+        };
+        fetchData();
+    }, []);
     return (
         <section className="home bd-grid" id="home">
             <div className="home__data">
                 <h1 className="home__title">
                     <div className="userContainer"></div>
-                    Hi,<br />I am <span className="home__title-color">Nhon</span><br />
+                    Hi,<br />I am <span className="home__title-color">{data?.name}</span><br />
                     Web Developer
                 </h1>
 
@@ -17,11 +28,10 @@ function HomeBanner() {
                 <a href={cv} className="button" style={{ backgroundColor: 'white', borderColor: 'rgb(49, 112, 238)', borderStyle: 'dashed' }} download>
                     <p style={{ color: 'black' }}>Download CV</p>
                 </a>
-
                 <div className="home__social">
-                    <a href="https://linkedin.com/in/truongnhon" className="home__social-icon"><LinkedinOutlined /></a>
-                    <a href="https://facebook.com/nhonvtt" className="home__social-icon"><FacebookOutlined /></a>
-                    <a href="https://github.com/nhonvo" className="home__social-icon"><GithubOutlined /></a>
+                    <a href={data?.socialLink?.linkedin} className="home__social-icon"><LinkedinOutlined /></a>
+                    <a href={data?.socialLink?.facebook} className="home__social-icon"><FacebookOutlined /></a>
+                    <a href={data?.socialLink?.github} className="home__social-icon"><GithubOutlined /></a>
                 </div>
                 <a href="#about" className="home__scroll">
                     <DownOutlined className="home__scroll-icon" />

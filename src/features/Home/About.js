@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import agent from "../../app/api/agent";
 import avatar from '../.././Assets/img/avatar.jpg'
 
 function About() {
+    const [data, setData] = useState(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await agent.get('/me');
+            setData(response.data);
+        };
+        fetchData();
+    }, []);
     return (
         <section className="about section" id="about">
             {/* About section content */}
@@ -9,13 +18,13 @@ function About() {
 
             <div className="about__container bd-grid">
                 <div className="about__img">
-                    <img src={avatar} alt="" />
+                    <img src={data?.avatar?.avatarUrl2} alt="" />
                 </div>
 
                 <div>
                     <h2 className="about__subtitle">Truong Nhon aka "Dotnet devil" </h2>
                     <p className="about__text">
-                        The individual has a strong passion for .NET development and demonstrates a keen curiosity for exploring new technologies. With one year of experience as a software developer at FPT Company Vietnam, they have honed their skills in .NET framework. Their dedication extends beyond their professional endeavors, as they actively pursue coding as a hobby.
+                        {data?.description}
                     </p>
                 </div>
             </div>
