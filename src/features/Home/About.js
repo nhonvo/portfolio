@@ -1,17 +1,11 @@
-import React, { useEffect, useState } from "react";
-import agent from "../../app/api/agent";
+import React, { useEffect } from "react";
+import { useStore } from "../../app/stores/store";
 
 function About() {
-    const [data, setData] = useState(null);
+    const { meStore } = useStore();
     useEffect(() => {
-        // const fetchData = async () => {
-        //     const response = await agent.get('/me');
-        //     setData(response.data);
-        // };
-        // fetchData();
-        setData([])
-
-    }, []);
+        meStore.loadMes();
+    }, [meStore])
     return (
         <section className="about section" id="about">
             {/* About section content */}
@@ -19,13 +13,13 @@ function About() {
 
             <div className="about__container bd-grid">
                 <div className="about__img">
-                    <img src={data?.avatar?.avatarUrl2} alt="" />
+                    <img src={meStore?.me?.images[1]?.path} alt="" />
                 </div>
 
                 <div>
-                    <h2 className="about__subtitle">Truong Nhon aka "Dotnet devil" </h2>
+                    <h2 className="about__subtitle">{meStore?.me?.fullName}</h2>
                     <p className="about__text">
-                        {data?.description}
+                        {meStore?.me?.description}
                     </p>
                 </div>
             </div>

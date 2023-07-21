@@ -1,16 +1,21 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
 import './Footer.css'
+import { useStore } from "../../app/stores/store";
 
 function Footer() {
+    const { meStore } = useStore();
+    useEffect(() => {
+        meStore.loadMes();
+    }, [meStore])
     return (
         <footer className="footer">
             <p className="footer__title">Truong Nhon</p>
             <div className="footer__social">
-                <a href="https://www.facebook.com/nhonvtt/">
+                <a href={meStore?.me?.socialLink?.facebook}>
                     <FacebookOutlined />
                 </a>
-                <a href="https://www.instagram.com/vothuongtruongnhon/">
+                <a href={meStore?.me?.socialLink?.facebook}>
                     <InstagramOutlined />
                 </a>
             </div>

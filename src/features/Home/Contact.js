@@ -1,18 +1,11 @@
-import { React, useState, useEffect } from "react";
-import agent from "../../app/api/agent";
+import React, { useEffect } from "react";
+import { useStore } from "../../app/stores/store";
 
 function Contact() {
-    const [data, setData] = useState(null);
-
+    const { meStore } = useStore();
     useEffect(() => {
-        // const fetchData = async () => {
-        //     const response = await agent.get('/me');
-        //     setData(response.data);
-        // };
-        // fetchData();
-        setData([])
-
-    }, []);
+        meStore.loadMes();
+    }, [meStore])
     return (
         <section className="contact section" id="contact">
             <h2 className="section-title">Contact</h2>
@@ -20,13 +13,13 @@ function Contact() {
             <div className="contact__container bd-grid">
                 <div className="contact__info">
                     <h3 className="contact__subtitle">EMAIL</h3>
-                    <span className="contact__text">{data?.email}</span>
+                    <span className="contact__text">{meStore?.me?.email}</span>
 
                     <h3 className="contact__subtitle">PHONE</h3>
-                    <span className="contact__text">{data?.phone}</span>
+                    <span className="contact__text">{meStore?.me?.phone}</span>
 
                     <h3 className="contact__subtitle">ADDRESS</h3>
-                    <span className="contact__text">{data?.address}</span>
+                    <span className="contact__text">{meStore?.me?.address}</span>
                 </div>
 
                 <div className="contact__container bd-grid">

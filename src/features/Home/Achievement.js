@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import agent from '../../app/api/agent';
+import React, { useEffect } from 'react';
 import './Achievement.css'
+import { useStore } from "../../app/stores/store";
+
 
 function Achievement() {
-    const [data, setData] = useState(null);
-
+    const { achievementStore } = useStore();
     useEffect(() => {
-        // const fetchData = async () => {
-        //     const response = await agent.get('/achievement');
-        //     setData(response.data);
-        // };
-        // fetchData();
-        setData([])
-
-    }, []);
+        achievementStore.loadAchievements();
+    }, [achievementStore])
     return (
         <section className="work section" id="achievement">
             <h2 className="section-title">Achievement</h2>
             <div className="work__container bd-grid">
-                {data?.map((item, index) => (
+                {achievementStore.achievementList?.map((item, index) => (
                     <a key={index} href="" target="_blank" className="work__img" title="Image update later">
                         <img src={item?.images[0]?.path} alt="" />
                         <h2 className="about__subtitle" style={{ color: 'rgb(49, 112, 238)', padding: '1rem' }}>
@@ -28,7 +22,6 @@ function Achievement() {
                             {item?.place}
                         </p>
                     </a>
-
                 ))}
             </div>
         </section>

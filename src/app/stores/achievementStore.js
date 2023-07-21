@@ -1,22 +1,21 @@
 import { makeAutoObservable } from "mobx"
 import agent from "../../app/api/agent";
 
-export default class ProjectStore {
-    projectList = []
-    selectedProject
+export default class AchievementStore {
+    achievementList = []
+    selectedAchievement
 
     constructor() {
         makeAutoObservable(this)
     }
 
-    loadProjects = async () => {
+    loadAchievements = async () => {
         try {
-            const result = await agent.projects.list()
-            this.projectList = result;
+            const result = await agent.achievements.list()
+            this.achievementList = result;
 
         } catch (error) {
             console.log(error)
         }
     }
-
 }
