@@ -1,6 +1,6 @@
 import { DownOutlined, LinkedinOutlined, FacebookOutlined, GithubOutlined } from '@ant-design/icons';
 import React, { useEffect } from 'react';
-import { useStore } from "../../app/stores/store";
+import { useStore } from "../../../app/stores/store";
 
 function HomeBanner() {
     const { meStore } = useStore();

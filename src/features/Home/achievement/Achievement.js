@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Achievement.css'
-import { useStore } from "../../app/stores/store";
+import { useStore } from "../../../app/stores/store";
 
 
 function Achievement() {

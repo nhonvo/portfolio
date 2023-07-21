@@ -6,7 +6,7 @@ import {
   Routes
 } from "react-router-dom";
 
-import Home from './features/Home/Home';
+import Home from './features/Home/layout/Home';
 import TodoApp from './features/Todo/Todo';
 import NavBar from "./app/layout/NavBar";
 import Footer from "./app/layout/Footer";

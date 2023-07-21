@@ -1,9 +1,9 @@
 import { createContext, useContext } from "react";
 import ProjectStore from "./projectStore";
-import MeStore from "./meStore";
-import AchievementStore from "./achievementStore";
-import SkillStore from "./skillStore";
-import FileStore from "./fileStore";
+import MeStore from "../stores/meStore";
+import AchievementStore from "../stores/achievementStore";
+import SkillStore from "../stores/skillStore";
+import FileStore from "../stores/fileStore";
 
 export const store = {
     projectStore: new ProjectStore(),

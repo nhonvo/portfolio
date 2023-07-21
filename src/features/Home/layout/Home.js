@@ -1,11 +1,11 @@
 import React from 'react';
 import './Home.css'
-import HomeBanner from './HomeBanner';
-import About from './About';
-import Skills from './Skills';
-import Project from './Project';
-import Achievement from './Achievement';
-import Contact from './Contact';
+import HomeBanner from '../banner/Banner';
+import About from '../about/About';
+import Skills from '../skill/Skills';
+import Project from '../project/Project';
+import Achievement from '../achievement/Achievement';
+import Contact from '../contact/Contact';
 
 function Home() {
     return (

@@ -1,6 +1,6 @@
 import { React, useEffect } from "react";
 import { UserOutlined, CodeOutlined, DatabaseOutlined, RocketOutlined, ClockCircleOutlined, TeamOutlined, LikeOutlined } from '@ant-design/icons';
-import { useStore } from "../../app/stores/store";
+import { useStore } from "../../../app/stores/store";
 
 function Skills() {
     const { skillStore } = useStore();

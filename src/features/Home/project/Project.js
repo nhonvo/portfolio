@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { useStore } from "../../app/stores/store";
+import { useStore } from "../../../app/stores/store";
 
 function Project() {
     // const [data, setData] = useState(null);
