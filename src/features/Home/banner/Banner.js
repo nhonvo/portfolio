@@ -23,9 +23,9 @@ function HomeBanner() {
                     <p style={{ color: 'black' }}>Download CV</p>
                 </a>
                 <div className="home__social">
-                    <a href={meStore?.me?.socialLink?.linkedin} className="home__social-icon"><LinkedinOutlined /></a>
-                    <a href={meStore?.me?.socialLink?.facebook} className="home__social-icon"><FacebookOutlined /></a>
-                    <a href={meStore?.me?.socialLink?.github} className="home__social-icon"><GithubOutlined /></a>
+                    <a href={meStore?.me?.links[0]?.name} className="home__social-icon"><LinkedinOutlined /></a>
+                    <a href={meStore?.me?.links[1]?.name} className="home__social-icon"><FacebookOutlined /></a>
+                    <a href={meStore?.me?.links[2]?.name} className="home__social-icon"><GithubOutlined /></a>
                 </div>
                 <a href="#about" className="home__scroll">
                     <DownOutlined className="home__scroll-icon" />

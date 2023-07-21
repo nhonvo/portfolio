@@ -13,7 +13,6 @@ export default class MeStore {
         try {
             const result = await agent.mes.me()
             this.me = result;
-            console.log(result);
         } catch (error) {
             console.log(error)
         }

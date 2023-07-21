@@ -18,7 +18,6 @@ function TodoApp() {
         try {
             const response = await api.get('/todos');
             setTodos(response.data);
-            console.log("a");
         } catch (error) {
             console.error('Error fetching todos:', error);
         }
