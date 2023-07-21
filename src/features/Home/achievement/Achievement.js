@@ -13,7 +13,7 @@ function Achievement() {
             <h2 className="section-title">Achievement</h2>
             <div className="work__container bd-grid">
                 {achievementStore.achievementList?.map((item, index) => (
-                    <a key={index} href="" target="_blank" className="work__img" title="Image update later">
+                    <a key={index} href="" target="_blank" className="work__img" title="" rel="noopener noreferrer">
                         <img src={item?.images[0]?.path} alt="" />
                         <h2 className="about__subtitle" style={{ color: 'rgb(49, 112, 238)', padding: '1rem' }}>
                             {item?.name}

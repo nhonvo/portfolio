@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useStore } from "../../../app/stores/store";
+import ContactForm from "./ContactForm";
+import ChatBox from "./ChatBox/ChatBox";
 
 function Contact() {
     const { meStore } = useStore();
@@ -21,21 +23,9 @@ function Contact() {
                     <h3 className="contact__subtitle">ADDRESS</h3>
                     <span className="contact__text">{meStore?.me?.address}</span>
                 </div>
-
+                <ChatBox />
                 <div className="contact__container bd-grid">
-                    <form className="contact__form">
-                        {/* <form className="contact__form" onSubmit={handleSubmit}> */}
-                        <input type="text" placeholder="Name" className="contact__input" />
-                        <input type="email" placeholder="Email" className="contact__input" />
-                        <textarea
-                            name="message"
-                            cols="0"
-                            rows="10"
-                            className="contact__input"
-                            placeholder="Tell something about you"
-                        ></textarea>
-                        <input type="submit" value="Send" className="contact__button button" />
-                    </form>
+                    <ContactForm />
                 </div>
             </div>
         </section>

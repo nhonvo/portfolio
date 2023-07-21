@@ -3,14 +3,14 @@ import ProjectStore from "./projectStore";
 import MeStore from "../stores/meStore";
 import AchievementStore from "../stores/achievementStore";
 import SkillStore from "../stores/skillStore";
-import FileStore from "../stores/fileStore";
+import EmailStore from "../stores/emailStore";
 
 export const store = {
     projectStore: new ProjectStore(),
     meStore: new MeStore(),
     achievementStore: new AchievementStore(),
     skillStore: new SkillStore(),
-    fileStore: new FileStore()
+    emailStore: new EmailStore(),
 }
 
 export const StoreContext = createContext(store)

@@ -18,10 +18,7 @@ function HomeBanner() {
                     Web Developer
                 </h1>
 
-                <a href="#contact" className="button" style={{ margin: '1rem 0' }}>Contact</a>
-                <a href={cv} className="button" style={{ backgroundColor: 'white', borderColor: 'rgb(49, 112, 238)', borderStyle: 'dashed' }} download>
-                    <p style={{ color: 'black' }}>Download CV</p>
-                </a>
+                <a href={cv} className="button" style={{ margin: '1rem 0' }} target="_blank" rel="noopener noreferrer"><p>Download CV</p></a>
                 <div className="home__social">
                     <a href={meStore?.me?.links[0]?.name} className="home__social-icon"><LinkedinOutlined /></a>
                     <a href={meStore?.me?.links[1]?.name} className="home__social-icon"><FacebookOutlined /></a>
