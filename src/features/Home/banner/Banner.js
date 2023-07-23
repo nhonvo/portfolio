@@ -7,7 +7,7 @@ function HomeBanner() {
     useEffect(() => {
         meStore.loadMes();
     }, [meStore])
-    const cv = "http://localhost:5046/api/Image/Download/6b159931-4baf-4e1b-8391-f84e3bd119b5.pdf";
+    const cv = "https://portfolio-truongnhon.azurewebsites.net/api/Image/Download/6b159931-4baf-4e1b-8391-f84e3bd119b5.pdf";
 
     return (
         <section className="home bd-grid" id="home">

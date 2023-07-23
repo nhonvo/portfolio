@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import {
   BrowserRouter as Router,
-  Route,
-  Routes
 } from "react-router-dom";
 
 import Home from './features/Home/layout/Home';
-import TodoApp from './features/Todo/Todo';
 import NavBar from "./app/layout/NavBar";
 import Footer from "./app/layout/Footer";
 import Preloader from "./app/layout/Pre";
@@ -27,13 +24,10 @@ function App() {
       <Preloader load={load} />
       <NavBar />
       <Home />
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/todo" element={<TodoApp />} />
-      </Routes> */}
       <Footer />
     </Router>
   );
 }
 
 export default App;
+j
