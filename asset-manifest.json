@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9af9a6e3.css",
+    "main.js": "/portfolio/static/js/main.d15cc0d2.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/portfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/hdbank.jpg": "/portfolio/static/media/hdbank.27b100a785b1493639ee.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.45ce84775b10849a7a72.pdf",
+    "static/media/AI-Challenge.png": "/portfolio/static/media/AI-Challenge.279a57090fefe047bc53.png",
+    "static/media/twoone-movie.png": "/portfolio/static/media/twoone-movie.98e8e2acca60fffa44d6.png",
+    "static/media/binh-dinh-food.png": "/portfolio/static/media/binh-dinh-food.fba0a173c32e1ea43510.png",
+    "static/media/it-got-talent.jpg": "/portfolio/static/media/it-got-talent.c3de1332021c6df38d39.jpg",
+    "static/media/winform-twoone.png": "/portfolio/static/media/winform-twoone.f8e6c4c522f4af656aab.png",
+    "static/media/avatar.jpg": "/portfolio/static/media/avatar.9d6e5187af405d841b2b.jpg",
+    "static/media/schoolarship2021-2022.jpg": "/portfolio/static/media/schoolarship2021-2022.ca3227294a44918292bc.jpg",
+    "static/media/lstm.png": "/portfolio/static/media/lstm.7cee6b34eee23c3657c3.png",
+    "static/media/sv5t2021.jpg": "/portfolio/static/media/sv5t2021.7b5f3bc957030e27c328.jpg",
+    "static/media/my-first-website.jpg": "/portfolio/static/media/my-first-website.1efbf29ca3a589675a80.jpg",
+    "static/media/fakenews.png": "/portfolio/static/media/fakenews.fe6d482c6d02d90d293e.png",
+    "static/media/hdbank-project.png": "/portfolio/static/media/hdbank-project.ebca7bbba6cbf8f809a1.png",
+    "static/media/avatar-nonBackground.png": "/portfolio/static/media/avatar-nonBackground.2e77c28ba7c4430c19f1.png",
+    "static/media/sv5t2020.jpg": "/portfolio/static/media/sv5t2020.a3a2dc6d2b33545b6fa3.jpg",
+    "static/media/scholarship2020-2021.jpg": "/portfolio/static/media/scholarship2020-2021.d2e0a9fb0ce9bcb595a4.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.9af9a6e3.css.map": "/portfolio/static/css/main.9af9a6e3.css.map",
+    "main.d15cc0d2.js.map": "/portfolio/static/js/main.d15cc0d2.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9af9a6e3.css",
+    "static/js/main.d15cc0d2.js"
+  ]
+}
