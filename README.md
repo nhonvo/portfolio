@@ -1,52 +1,79 @@
-# Portfolio
-
-## Introduction
-
-This is a portfolio project built with ReactJS. It showcases my personal information, skills, projects, and achievements in a responsive and interactive manner.
+# Portfolio Project - React
 
 ## Overview
 
-The portfolio is structured into different sections, including:
+Welcome to my portfolio project built with React! This project serves as a showcase of my skills, projects, and experiences. This portfolio provides an interactive and visually appealing way for visitors to learn more about me and explore the projects I've worked on.
 
-- Home: Displays a brief introduction and social media links.
-- About: Provides information about my background, skills, and experience.
-- Skills: Highlights my technical skills and proficiency levels.
-- Projects: Showcases a selection of my completed projects.
-- Achievements: Lists notable achievements and awards.
-- Contact: Provides contact information and a contact form.
-The portfolio is designed to be visually appealing, user-friendly, and mobile-responsive, ensuring optimal viewing experience across different devices.
+## Technologies Used
 
-## Run
+- **React**: The project is built using React, a powerful and popular JavaScript library for building user interfaces.
+- **JavaScript (ES6+)**: Modern JavaScript features and syntax were employed to create a robust and maintainable codebase.
+- **CSS (Sass/SCSS)**: Styling is implemented with Sass/SCSS for a modular and structured approach to CSS.
+- **Responsive Design**: The portfolio is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.
 
-To run the portfolio project locally, follow these steps:
+## Features
 
-1. Clone the repository:
+**Home Section:** A welcoming landing section introducing visitors to the portfolio.
 
-   ```bash
-   git clone https://github.com/nhonvo/portfolio.git
-   ```
+**About Me:** An informative section detailing my background, skills, and interests.
 
-2. Navigate to the project directory:
+**Projects:** Showcase of my notable projects, each with a description, technologies used, and links to the respective repositories or live demos.
 
-   ```bash
-   cd portfolio
-   ```
+**Skills:** A visual representation of my skills, providing a quick overview of my technical expertise.
 
-3. Install the dependencies:
+**Achievement** A visual representation of my achievement.
 
-   ```  bash 
-   npm install
-   ```
+**Certificate** A visual representation of my certificate.
 
-4. Start the development server:
+**Contact:** Ways for visitors to get in touch with me, including links to my social profiles and a contact form.
 
-   ```bash
-   npm start
-   ```
+## Demo
 
-5. Open your web browser and visit `http://localhost:3000` to view the portfolio.
+Check out the live demo of my portfolio [here](https://nhonvo.github.io/portfolio/).
 
-## License
+## How to Run
 
-This project is licensed under the MIT License. Feel free to modify and use the code for your own portfolio.
+1. **Clone the Repository:**
 
+```bash
+git clone https://github.com/nhonvo/portfolio.git
+cd portfolio
+```
+
+2. **Install Dependencies:**
+
+```bash
+npm install
+```
+
+3. **Run the Application:**
+
+```bash
+npm start
+```
+
+4. **Open in Browser:**
+
+- Open your browser and go to `http://localhost:3000` to view the portfolio.
+
+## Deployment
+
+To deploy the portfolio to GitHub Pages, use the following command:
+
+```bash
+npm run deploy
+```
+
+This command will build the project and deploy it to the `gh-pages` branch of your repository, making it accessible via GitHub Pages at `https://your-username.github.io/your-portfolio`.
+
+## Customize
+
+Feel free to customize the content, styles, and structure of the portfolio to better reflect your personality and achievements. Update the project details, add new sections, or modify the styling to match your preferences.
+
+## Acknowledgments
+
+Special thanks to the React community for providing excellent documentation and tools that made building this portfolio a smooth and enjoyable experience.
+
+------
+
+Thank you for visiting my portfolio! If you have any questions or would like to connect, feel free to reach out. Happy coding!
